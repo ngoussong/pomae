@@ -1,0 +1,30 @@
+<div class="page-wrapper">
+
+  <div class="background-blur-layer"></div>
+
+  <div class="content-layer">
+      <div class="video-animation-container">
+        <video
+        #videoPlayer
+          [src]="videoSource"
+          (play)="onVideoStateChange()"
+          (pause)="onVideoStateChange()"
+          (ended)="onVideoEnded()"
+          playsinline
+          disablePictureInPicture
+          loop
+          preload="auto">
+          Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+        <div class="bucket">
+          <div class="water" [style.height]="contributionPercent"></div>
+          <div class="handle-base left"></div>
+          <div class="handle-base right"></div>
+        </div>
+      </div>
+
+  </div>
+
+</div>
+
+<button (click)="premierLancement()" *ngIf="!premierLanc" class="premierLanc">lancement</button>
