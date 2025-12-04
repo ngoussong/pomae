@@ -13,12 +13,16 @@ export class AdminComponent {
   valeurDon = 0;
 
   // valeur experer des don en $
-  valeurEsperer = 5000
+  valeurEsperer = 0
 
 
   constructor(private donService:DonService) {
   }
 
+
+  ngOnInit(){
+    this.valeurEsperer = parseInt(localStorage.getItem('totalExpected')??'0')
+  }
 
 
   faireDon() {
