@@ -20,6 +20,7 @@
           <div class="water" [style.height]="contributionPercent"></div>
           <div class="handle-base left"></div>
           <div class="handle-base right"></div>
+          <h1 class="percentage"> {{contributionPercent}} </h1>
         </div>
       </div>
 
@@ -29,4 +30,4 @@
 
 <button (click)="premierLancement()" *ngIf="!premierLanc" class="premierLanc">lancement</button>
 
-<h1 class="percentage"> {{contributionPercent}} </h1>
+
