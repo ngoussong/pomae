@@ -16,15 +16,12 @@
   position: fixed;
   width: 150px;
   height: 180px;
-  /* La forme du seau (trapèze) */
-  background-color: rgba(255, 255, 255, 1); /* Semi-transparent */
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
   border: 1px solid #ccc;
-  // border-bottom-left-radius: 20px;
-  // border-bottom-right-radius: 20px;
-  transform: perspective(300px) rotateX(5deg);
+  transform: perspective(300px) rotateX(5deg) translate(-30%, 70%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  bottom: 10%;
+  top: 50%;
   left: 50%;
   z-index: 5;
 }
@@ -35,7 +32,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url('../../../public/eaux.jpg');
+  // background-image: url('../../../public/eaux.jpg');
+  background: linear-gradient(to top, rgba(173, 216, 230, 0.8), rgba(135, 206, 250, 0.6));
   border-color: red($color: #000000);
 }
 
@@ -93,4 +91,13 @@
   position: absolute;
   top: 10%;
   left: 10%;
+}
+
+.percentage{
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  z-index: 10;
+  font-size: 300;
+  color: aliceblue;
 }

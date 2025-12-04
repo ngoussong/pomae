@@ -17,7 +17,6 @@ export class DonComponent implements AfterViewInit  {
   videoSource: string = 'inc1.mp4';
   isPlaying: boolean = false;
 
-  current =0;
   total = 0;
 
 
