@@ -1,5 +1,9 @@
 <div class="page-wrapper">
 
+  <header class="page-header">
+    <h1>Welcome to Bandoum Village Menoua</h1>
+  </header>
+
   <div class="background-blur-layer"></div>
 
   <div class="content-layer">
@@ -20,6 +24,7 @@
           <div class="water" [style.height]="contributionPercent"></div>
           <div class="handle-base left"></div>
           <div class="handle-base right"></div>
+          <h1 class="percentage"> {{contributionPercent}} </h1>
         </div>
       </div>
 
@@ -29,5 +34,3 @@
 
 <button (click)="premierLancement()" *ngIf="!premierLanc" class="premierLanc">lancement</button>
 
-<!-- <h1 class="percentage"> Welcome to Bandoum Village </h1>
-<h1 class="percentage"> {{contributionPercent}} </h1> -->

@@ -13,7 +13,7 @@
 }
 
 .bucket {
-  position: fixed;
+  position: absolute;
   width: 150px;
   height: 180px;
   background-color: rgba(255, 255, 255, 1);
@@ -21,7 +21,7 @@
   border: 1px solid #ccc;
   transform: perspective(300px) rotateX(5deg) translate(-30%, 70%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  top: 50%;
+  top: 54%;
   left: 50%;
   z-index: 5;
 }
@@ -96,8 +96,27 @@
 .percentage{
   position: absolute;
   left: 25%;
-  top: 10%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
   z-index: 10;
   font-size: 300;
-  color: aliceblue;
+  color: rgb(77, 77, 89);
+}
+
+.page-header {
+  position: absolute;
+  top: 20px; /* or 0 if you want tight top */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10; /* above video and blur */
+}
+
+.page-header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* adapt to your background */
 }
