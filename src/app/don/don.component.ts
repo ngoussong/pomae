@@ -14,7 +14,7 @@ export class DonComponent implements AfterViewInit  {
   // @ViewChild('videoPlayer') water!: ElementRef<HTMLElement>;
 
   contributionPercent='0%'
-  videoSource: string = 'inc1.mp4';
+  videoSource: string = 'to.mp4';
   isPlaying: boolean = false;
 
   total = 0;
