@@ -95,9 +95,20 @@
 
 .percentage{
   position: absolute;
+  left: 33%;
+  right: 25%;
+  top: 35%;
+  bottom: 25%;
+  z-index: 10;
+  font-size: 300;
+  color: rgb(77, 77, 89);
+}
+
+.amount{
+  position: absolute;
   left: 25%;
   right: 25%;
-  top: 25%;
+  top: 5%;
   bottom: 25%;
   z-index: 10;
   font-size: 300;

@@ -16,6 +16,7 @@ export class DonComponent implements AfterViewInit  {
   contributionPercent='0%'
   videoSource: string = 'inc1.mp4';
   isPlaying: boolean = false;
+  amount=''
 
   total = 0;
 
@@ -29,6 +30,7 @@ export class DonComponent implements AfterViewInit  {
       percent=100
     }
     this.contributionPercent= percent+'%'
+    this.amount = parseInt(localStorage.getItem('currentAmount')??'0')+''
   }
 
   ngAfterViewInit() {
@@ -74,6 +76,7 @@ export class DonComponent implements AfterViewInit  {
               percent=99
             }
             this.contributionPercent= percent+ '%'
+            this.amount = parseInt(localStorage.getItem('currentAmount')??'0')+''
             // this.toggleVideoPlayPause()
         }
 
@@ -85,6 +88,7 @@ export class DonComponent implements AfterViewInit  {
               percent=100
             }
             this.contributionPercent= percent+'%'
+            this.amount = parseInt(localStorage.getItem('currentAmount')??'0')+''
 
             // this.toggleVideoPlayPause()
         }
